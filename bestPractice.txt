@@ -1,0 +1,59 @@
+Martin Clavin
+
+Identering
+
+Enilgt google skall man använda 2 spaces vid indentering
+if(condition){
+  var x = 10;
+};
+
+w3schools tyäger inte samma sak. Här tycker dem att man ska använda 4 spaces istället
+if(condition){
+    var x = 10;
+};
+
+Att använda tab verkar inte vara särskilt populärt eftersom en tab kan vara olika många columner i olika källor, vilket kan ställa till det när man arbetar i grubb och delar kod.
+
+
+Namngivning av variabler och funktioner
+
+När vi namnger variabler och funktioner i JS enas både w3schools och google att man utgår från camelCase. Alltså alltid små bokstäver.
+var x = ord;
+
+Om vi namnger en variabel till flera ord använder man stor bokstav i början av varje ord
+var x = variabelMångaOrd;
+
+
+Deklaration av variabler och funktioner
+
+Deklarera alltid variabler högst upp i varje scope. Om variabeln är en konstand, använd KONSTANS_VARIABEL
+
+När det gäller funktioner i kodblock använder man function expression. ÄR man utanför ett kodblock kan man använde function declaration.
+
+
+Kommentering av kod
+
+Om kommentaren bara är n ran går det bra att använda sig av //.
+//Min kommentar
+
+Om kommentaren skulle vara mer än 1 rad använder man /* och avslutar kommentaren med */
+/**
+ * Min kommentar
+ * är längre
+ * än 1 rad
+ */
+
+
+Hur man skriver syntax för if/while/for-loopar
+
+Starta med en bracket efter sista tecknat på samma rad. Avsluta med en closing bracken på ny rad. Indentering
+
+
+Hur man ska använda lokala och globala variabler
+
+Undvik globala variabler om möjligt, använd dig utav closures istället. Globala variabler och funktioner kan blir överskrivna av andra script. Lokala variabler måste blir deklarerade med var, annars bler det en global variabel.
+
+Källor:
+http://www.w3schools.com/
+https://google.github.io/styleguide/javascriptguide.xml
+http://stackoverflow.com/
